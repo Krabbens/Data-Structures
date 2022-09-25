@@ -514,7 +514,7 @@ namespace utils
 		_Func(forward<_FnArgs>(_Args)...);
 	};
 	
-	template <pipeline::iter FwdIt, class EndIt>
+	template <class FwdIt, class EndIt>
 	constexpr decltype(auto) max(FwdIt _First, EndIt _Last) {
 		if (_First == _Last) {
 			return *_First;
